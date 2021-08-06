@@ -22,6 +22,8 @@ public class Main {
         Pessoa danillo = new Pessoa("Danillo");
         danillo.dizerOlaAoMundo();
         
+        Pessoa giovana = new Pessoa("Giovana");
+        giovana.dizerOlaAoMundo();
     }
     
 }
