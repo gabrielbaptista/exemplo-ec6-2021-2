@@ -5,6 +5,8 @@
  */
 package br.com.ftt.meuprojeto;
 
+import br.com.ftt.meuprojeto.Entidades.Compra;
+
 /**
  *
  * @author gabriell
@@ -13,19 +15,17 @@ public class Main {
 
     /**
      * @param args the command line arguments
+     * @throws InterruptedException
      */
-    public static void main(String[] args) {
-        // TODO code application logic here
-        Pessoa gabriel = new Pessoa("Gabriel");
-        gabriel.dizerOlaAoMundo();
-        
-        Pessoa danillo = new Pessoa("Danillo");
-        danillo.dizerOlaAoMundo();
-        
-        Pessoa giovana = new Pessoa("Giovana");
-        giovana.dizerOlaAoMundo();
-
-        // Teste de Hoje - Sexta-Feira 13! 
+    public static void main(String[] args) throws InterruptedException {
+        Compra compraDoGabriel = new Compra(1234, "Compra de um mouse");
+        do 
+        {
+            compraDoGabriel = compraDoGabriel.avalia();
+            Thread.sleep(100);
+        }
+        while (!compraDoGabriel.getCompraConcluida());
+        System.out.println("Fim do processo!");
     }
-    
+
 }
